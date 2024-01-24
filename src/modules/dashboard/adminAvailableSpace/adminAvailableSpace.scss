@@ -1,0 +1,44 @@
+.available-spaces-wrapper {
+  box-sizing: border-box !important;
+  position: relative;
+  padding: 1em;
+  //   height: 423px;
+  //   width: 353px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+    0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+
+  .mt-0 {
+    margin-top: 0px;
+  }
+
+  .mt-1 {
+    margin-top: 0.6rem;
+    margin-right: 0.7rem;
+  }
+
+  .devices-chart {
+    background-color: rgba(228, 0, 0, 0.342);
+    position: relative;
+
+    .devices-chart-inner {
+      position: absolute;
+      top: -15px;
+      width: 100%;
+    }
+  }
+
+  .devices-info-grid {
+    width: -webkit-fill-available;
+    margin-right: 1rem;
+
+    .stats-border-bottom {
+      border-bottom: 1px solid #0f51562c;
+      // width: 90%;
+    }
+
+    .float-right {
+      float: right;
+    }
+  }
+}

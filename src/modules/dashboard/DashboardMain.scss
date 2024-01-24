@@ -1,0 +1,77 @@
+.dashboard-main {
+  width: 100% !important;
+  margin: 0 !important;
+
+  .dashboard-heading {
+    margin: 0 0 1rem 0 !important;
+  }
+
+
+  // Collaborators card styling
+  .collaborator-card {
+    box-sizing: border-box !important;
+
+    .card-wrap {
+      box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+        0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+      border-radius: 8px;
+      cursor: pointer;
+      min-height: 150px;
+      padding: 18px 20px;
+      box-sizing: border-box !important;
+    }
+
+    .clientsLayer {
+      background: url(../../assets/images/dashboard/cards/cardClients.png),
+        linear-gradient(275.51deg, #5ac996 0%, #c0f6b8 100%) !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100%;
+    }
+
+    .claimsLayer {
+      background: url(../../assets/images/dashboard/cards/cardClaims.png),
+        linear-gradient(275.51deg, #006e77 0%, #54c8d1 100%) !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100%;
+    }
+
+    .collaboratorsLayer {
+      background: url(../../assets/images/dashboard/cards/cardCollaborators.png),
+        linear-gradient(275.51deg, #035e5e 0%, #14aaaa 100%) !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100%;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .card-title {
+      margin: 0;
+      padding: 0 !important;
+    }
+
+    .card-count {
+      margin: 0;
+      padding: 0 !important;
+    }
+
+    .card-img {
+      background-color: #fff;
+      border-radius: 50px;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .dashboard-main {
+      .dashboard-heading {
+        margin: 1rem;
+      }
+    }
+  }
+}

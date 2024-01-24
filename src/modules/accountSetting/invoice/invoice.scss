@@ -1,0 +1,122 @@
+.invoices {
+  height: 660px;
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+    height: 54px !important;
+  }
+
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $dark-green;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+}
+
+.invoice-left-text-spacing {
+  padding-bottom: 10px;
+}
+
+.invoice-due-date {
+  margin-top: 17px;
+  margin-bottom: 12px;
+}
+
+.invoice-amount-due {
+  padding-bottom: 12px;
+}
+
+.wrap-invoice-amount-due {
+  margin-top: 35px;
+}
+
+.invoices-image {
+  width: 100% !important;
+
+}
+
+.invoice-modal {
+  
+  .invoice-border-botttom {
+   
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(52, 188, 133, 0.25) 0%, rgba(40, 157, 110, 0.25) 100%);
+    box-shadow: 0px -15px 145px rgba(101, 101, 101, 0.1);
+   
+  }.invoice-download-btn{
+    padding: 12px 35.5px;
+    height: 48px;
+    width: 177px;
+    border: none;
+    margin-right: 50px;
+    text-transform: capitalize;
+    transition: all 1s !important;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #34bc85 0%, #289d6e 100%);
+    text-transform: capitalize;
+    &:hover {
+      background: $primary-color !important;
+    }
+  }
+}
+
+.table-hover {
+  height: 56px;
+  background: rgba(52, 188, 133, 0.1);
+
+  &:hover {
+    background: #e6fff4 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap-invoice-amount-due{
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }.wrap-invoice-4122-section{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}.wrap-invoice-download-btn{
+   width: 100% !important;
+  }
+.invoice-download-btn{
+  margin-right: 0px !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}.invoice-top-address-text{
+  padding-bottom:3px;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+}.invoice-rnd-tax-claims-address{
+    margin: 0 auto !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-bottom: 8px;
+} .wrap-invoice-text-and-logo .invoice-logo{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 12px;
+}
+.invoice-border-botttom{
+  width: 100% !important;
+}
+}

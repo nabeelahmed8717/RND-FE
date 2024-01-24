@@ -1,0 +1,11 @@
+.custom-form {
+  .add-button {
+    cursor: pointer;
+    padding: 12px 36px;
+    line-height: 24px;
+    font-family: $font-source-sans-pro;
+    border: none;
+    border-radius: 3px;
+    background: $btn-color;
+  }
+}

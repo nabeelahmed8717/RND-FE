@@ -1,0 +1,300 @@
+.questions-progress-bar {
+  box-sizing: border-box !important;
+
+  .question-sidebar {
+    box-sizing: border-box !important;
+    border: 1px solid #DADEE8;
+    box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+    padding-top: 10px;
+    height: 100%;
+  }
+
+
+
+  .question-body {
+    box-sizing: border-box !important;
+    border: 1px solid #DADEE8;
+    box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+    padding: 27px;
+    height: 100%;
+    @media screen and (max-width: 1100px) {
+      height: fit-content;
+      padding-bottom: 120px;
+    }
+    @media screen and (max-width:375px) {
+      padding: 20px 10px;
+    }
+
+    .question-wrapper {
+      box-sizing: border-box !important;
+      height: 52.8vh;
+      overflow-y: scroll;
+      // margin-top: 20px;
+      // padding-bottom: 30px;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      .show-messages {
+        padding: 20px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+        border: 1px solid #DADEE8;
+        p {
+          padding-left: 10px;
+        }
+      }
+    }
+
+  }
+
+  // .question-bottom-btn{
+  //     bottom: 40px;
+  //     right: 30px;
+  // }
+  .qualify-question {
+    color: #17884D;
+  }
+
+  .Company-question {
+    color: #FF8A43;
+  }
+
+  .Projects-question {
+    color: $blue-color;
+  }
+
+  .Costs-question {
+    color: #6A346C;
+  }
+
+  .qualify-check-pass {
+    svg {
+      width: 85%;
+    }
+
+    path {
+      color: #17884D;
+    }
+  }
+
+  .Company-check-pass {
+    svg {
+      width: 85%;
+    }
+
+    path {
+      color: #FF8A43;
+    }
+  }
+
+  .Projects-check-pass {
+    svg {
+      width: 85%;
+    }
+
+    path {
+      color: $blue-color;
+    }
+  }
+
+  .Costs-check-pass {
+    svg {
+      width: 85%;
+    }
+
+    path {
+      color: #6A346C;
+    }
+  }
+
+  .question-btn {
+    height: 48px;
+    width: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question-btn-back {
+    width: 106px;
+    &:hover {
+      border: 1px solid #0F5156;
+    }
+  }
+
+  .hover-btn {
+    &:hover {
+      // background-color: $primary-color;
+      background: linear-gradient(90deg, $primary-color 0%, $primary-color 100%);
+      transition: .4s;
+    }
+  }
+
+  .sidebar-button {
+    width: 50%;
+    color: $primary-color;
+    padding: 10px;
+    font-family: "Source Sans Pro";
+  }
+
+  .sub-menu-line {
+    width: 2px;
+    height: 97%;
+    background-color: #dddddd;
+    top: -18px;
+    left: 22px;
+  }
+
+  .show-error-message {
+    background-color: rgb(220 53 69 / 20%);
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 280px;
+  }
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.top-22 {
+  top: -20px;
+  left: 22px;
+}
+
+.skeleton-card {
+  height: 50vh;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 20PX;
+}
+
+.skeleton-card .header {
+  display: flex;
+  align-items: center;
+}
+
+.header .img {
+  height: 75px;
+  width: 75px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .details {
+  margin-left: 20px;
+}
+
+.details span {
+  display: block;
+  background: #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.details .name {
+  height: 15px;
+  width: 100px;
+}
+
+.details .about {
+  height: 13px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.skeleton-card .description {
+  margin: 25px 0;
+}
+
+.description .main-line {
+  background: #d9d9d9;
+  border-radius: 10px;
+  height: 13px;
+  margin: 25px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.line-30 {
+  width: calc(100% - 30%) !important;
+}
+
+.line-40 {
+  width: calc(100% - 40%) !important;
+}
+
+.line-80 {
+  width: calc(100% - 80%) !important;
+}
+.line-70 {
+  width: calc(100% - 70%) !important;
+}
+
+.description .line {
+  width: 100%;
+}
+
+.skeleton-card .btns {
+  display: flex;
+}
+
+.skeleton-card .btns .btn {
+  height: 25px;
+  width: 100%;
+  background: #d9d9d9;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btns .btn-1 {
+  margin-right: 8px;
+}
+
+.btns .btn-2 {
+  margin-left: 8px;
+}
+
+.header .img::before,
+.details span::before,
+.description .line::before,
+.btns .btn::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0, 0, 0, 0.05) 20%, #d9d9d9 40%, #d9d9d9 100%);
+  background-repeat: no-repeat;
+  background-size: 450px 400px;
+  animation: shimmer 1s linear infinite;
+}
+
+.header .img::before {
+  background-size: 650px 600px;
+}
+
+.details span::before {
+  animation-delay: 0.2s;
+}
+
+.btns .btn-2::before {
+  animation-delay: 0.22s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -450px 0;
+  }
+
+  100% {
+    background-position: 450px 0;
+  }
+}

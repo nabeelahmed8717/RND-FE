@@ -1,0 +1,22 @@
+.add-user {
+  .MuiOutlinedInput-input {
+    padding: 12.5px 12px;
+  }
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+    .MuiOutlinedInput-notchedOutline {
+    border-color: $dark-green;
+  }
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}

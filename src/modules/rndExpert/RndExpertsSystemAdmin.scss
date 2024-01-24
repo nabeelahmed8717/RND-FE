@@ -1,0 +1,67 @@
+.wrapper-rnd-expert-admin {
+    border: 1px solid #DADEE8;
+    padding: 25px 30px 10px 30px;
+
+    .rnd-expert-admin-table {
+        padding: 12px;
+        margin-top: 0px;
+    }
+
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 24px;
+    }
+
+    .add-rnd-expert-btn {
+        background: $btn-color;
+        text-transform: capitalize;
+        height: 48px;
+        margin-top: 10px;
+
+        &:hover {
+            background: $primary-color !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper-rnd-expert-admin .wrap-rnd-expert-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .wrapper-rnd-expert-admin .add-rnd-expert-btn {
+        margin-top: 17px;
+        margin-left: 22px;
+    }
+
+    .wrapper-rnd-expert-admin .rnd-expert-admin-table {
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .wrapper-rnd-expert-admin .wrap-rnd-expert-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .wrapper-rnd-expert-admin .add-rnd-expert-btn {
+        margin-top: 17px;
+        margin-left: 22px;
+    }
+
+    .wrapper-rnd-expert-admin .rnd-expert-admin-table {
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 1280px),
+(min-width: 1024px) {
+    .wrapper-rnd-expert-admin .add-rnd-expert-btn {
+        margin-right: 11px;
+    }
+}

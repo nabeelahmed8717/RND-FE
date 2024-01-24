@@ -1,0 +1,63 @@
+.modalContent {
+    padding: 5px;
+    .term-condition-content{
+        color:#6C757D
+    }
+    .cookies-modal {
+        margin: 20px 0px;
+        h2{
+            margin: 0;
+            padding: 0;
+        }
+
+        .privacy-content{
+            margin-bottom: 20px;
+            p{
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .description-modal {
+            
+            p {
+                margin: 0;
+                color: #6C757D !important;
+            }
+        }
+        h2 {
+            margin: 0;
+            line-height: 0;
+            margin: 40px 0px;
+            color:#152536 !important;
+        }
+
+    }
+    ul{
+        padding-left: 22px;
+        li{
+            color: #6C757D !important;
+            padding-bottom: 10px;  
+        
+        }
+    }
+    h2{
+        color:#152536 !important;
+    }
+    p{
+        color: #6C757D;
+        strong{
+            color:#152536 !important;  
+        }
+    }
+}
+.term-condition-list{
+    color: #6C757D;
+    strong{
+        color: #000;
+    }
+}
+.term-condition-list::after{
+    content: "";
+    margin-right: 0px !important;
+}
+ .li_style{list-style-type: circle;}

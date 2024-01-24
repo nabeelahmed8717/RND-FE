@@ -1,0 +1,33 @@
+.filter-wrap-rnd-expert {
+  .MuiOutlinedInput-input {
+    padding: 15px 12px;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+  .rnd-expert-filter-text-input {
+    text-indent: 0px;
+    background: $white-color;
+    outline: none;
+    padding: 0px 20px 0px 50px;
+    box-sizing: border-box;
+    border: 1px solid #DADEE8;
+    color: $dark-color;
+
+    &::placeholder {
+      opacity: 0.5;
+      color: $dark-color;
+      font-weight: $fw-600;
+      font-size: $fs-16;
+      font-family: $font-source-sans-pro;
+    }
+
+    &:hover {
+      border: 1px solid $primary-color;
+    
+    }
+  }
+
+}

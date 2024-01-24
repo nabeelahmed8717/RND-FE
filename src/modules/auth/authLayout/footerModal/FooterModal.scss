@@ -1,0 +1,27 @@
+
+.modalContent{
+        .cookiesListText{
+            font-weight: 400;
+        }
+    @media screen and (max-width: 786px) {
+        h2{
+            font-size: 18px !important;
+        }
+        h3{
+            font-size: 16px !important;
+        }
+        ul li,p{
+            font-size: 14px !important;
+        }
+    }   
+}
+.modalTitle{
+    @media screen and (max-width: 786px) {
+        font-size: 16px;
+    }
+}
+.FooterModal{
+
+    ::-webkit-scrollbar { width: 0 !important }
+
+}

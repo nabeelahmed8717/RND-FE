@@ -1,0 +1,82 @@
+.signin-wrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: bottom !important;
+  background: url("../../assets/images/auth/authBackGround.jpg");
+
+  .signin-content {
+    .signin-form {
+      box-shadow: 0px 0px 12px 4px rgba(17, 82, 87, 0.2);
+      border-radius: $border-radius-40;
+
+      .featured-signin {
+        .form-content {
+          align-content: space-between;
+          min-height: calc(89vh - 4vh);
+
+          .form-wrapper {
+            align-items: space-between;
+
+            .remember-forgot {
+              a {
+                text-decoration: none;
+              }
+            }
+
+            .form-errors {
+              padding-top: 4px;
+              gap: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-btn {
+    button {
+      transition: ease 0.5s;
+      background-color: $secondary-color;
+
+      &:hover {
+        background-color: $primary-color !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .signin-form {
+      .signIn-heading {
+        padding-bottom: 25px !important;
+      }
+    }
+
+    .signin-form {
+      margin-bottom: 20px !important;
+    }
+  }
+
+
+  @media screen and (max-width: 690px) {
+
+    .form-heading {
+      h2 {
+        font-size: 40px !important;
+      }
+    }
+
+    .fs-18 {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .signin-wrapper {
+    background-position: 100% !important;
+  }
+}

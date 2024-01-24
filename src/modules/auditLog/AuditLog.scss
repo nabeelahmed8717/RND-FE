@@ -1,0 +1,63 @@
+.wrapper-main-audit-log {
+  width: 100%;
+  // margin-top: 27px;
+
+  .wrapper-inner-audit-log {
+    background-color: #fff;
+    border: 1px solid #dadee8;
+    border-radius: 8px;
+    padding: 22px 30px 1px 30px;
+  }
+
+  .gap-20 {
+    gap: 20px;
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+    height: 54px !important;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+  .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 54px !important;
+    border-radius: 3px;
+  }
+
+  .wrapper-avatar-auditLogs {
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.show-date-audit-logs {
+  .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    cursor: pointer !important;
+  }
+
+  .MuiInputBase-formControl {
+    cursor: pointer !important;
+  }
+
+}
+
+.datepicker-auditLog {
+  fieldset {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+  .svgIcon {
+    background-repeat: no-repeat !important;
+    background: url("../../assets/icons/auditLog/Calendar.svg");
+  }
+}

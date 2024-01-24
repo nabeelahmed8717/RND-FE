@@ -1,0 +1,461 @@
+// @import "@fullcalendar/common/main.scss";
+// @import "@fullcalendar/daygrid/main.scss";
+// @import "@fullcalendar/timegrid/main.scss";
+
+.calendar-wrapper {
+
+  .desc .MuiOutlinedInput-input {
+    height: 50px !important;
+    padding: 3px;
+  }
+
+  //   .deleteBtn {
+  //     background-color: $error-color  !important;
+  //     height: 40px;
+  //     width: 40px;
+  //   }
+
+  .heading {
+    width: 100%;
+    margin-top: 50px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .input-label {
+    text-transform: capitalize;
+  }
+
+  .checkbox-filter {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    @media screen and (max-width:900px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 30px 20px 0px 0px;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column !important;
+    }
+  }
+
+
+  a.fc-timegrid-event.fc-v-event.fc-event.fc-event-start.fc-event-end {
+    border: 0;
+  }
+
+  .MuiBox-root.css-70qvj9 {
+    height: 100%;
+  }
+
+  .main_text_wraper {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    // background: #007BFF;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 9px !important;
+    margin: 0;
+    width: 100%;
+
+    @media screen and (max-width:800px) {
+      min-width: 20px;
+      min-height: 10px;
+    }
+  }
+
+  // .addEventBtn {
+  //   font-size: 18px !important;
+  // }
+
+  @media screen and (max-width:800px) {
+    span.monthTitle {
+      display: none;
+    }
+
+    .monthTitle {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      line-height: 15px !important;
+    }
+  }
+
+  .fc-daygrid-event-harness {
+    font-size: 12px;
+    padding: 4px;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  .fc-prev-button,
+  .fc-next-button {
+    background: none !important;
+    color: #343A40 !important;
+    height: 30px;
+    width: 40px;
+    line-height: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative;
+  }
+
+  .fc-toolbar-chunk {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2) {
+      gap: 20px;
+      border-bottom: 1px solid rgba(15, 81, 86, 0.2);
+    }
+  }
+
+
+  .fc-toolbar-chunk .fc-prev-button>.fc-icon,
+  .fc-toolbar-chunk .fc-next-button>.fc-icon {
+    position: absolute;
+    top: 2.5px;
+    left: 7px;
+    border-color: #DADEE8 !important;
+  }
+
+  li span {
+    padding-left: 0;
+  }
+
+  .fc-toolbar-title {
+    font-size: $fs-36 !important;
+    font-weight: $fw-700 !important;
+    color: $primary-color !important;
+  }
+
+  .fc .fc-daygrid-day-top {
+    justify-content: center !important;
+    padding-top: 7px;
+  }
+
+  .css-17rfyuv {
+    height: 100%;
+    position: relative;
+  }
+
+  .MuiBox-root.css-1p2vhps {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0px 8px 8px rgb(0 0 0 / 30%);
+    height: 100% !important;
+    position: relative;
+
+    @media screen and (max-width:1400px) {
+      display: none;
+    }
+
+  }
+
+  .fc-toolbar-chunk .fc-myCustomButton-button {
+    background-color: #34BC85 !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    line-height: 24px !important;
+    margin-bottom: 10px;
+    padding: 12px 34px !important;
+    cursor: pointer;
+  }
+
+  .description.MuiBox-root.css-1sajv5q {
+    @media screen and (max-width: 1530px) {
+      display: none;
+    }
+  }
+
+  .weekTitle {
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  .fc-header-toolbar {
+    margin-bottom: 40px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .fc-toolbar-chunk .fc-today-button {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+  }
+
+  .fc-toolbar-chunk .fc-next-button {
+    margin-right: 15px !important;
+  }
+
+  .fc-dayGridMonth-button,
+  .fc-timeGridWeek-button,
+  .fc-timeGridDay-button,
+  .fc-listWeek-button {
+    background: none !important;
+    border: none !important;
+    color: rgba(52, 58, 64, 0.5) !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-transform: capitalize !important;
+  }
+
+  button[aria-pressed="true"] {
+    color: #343A40 !important;
+    position: relative;
+
+    &::before {
+      content: '' !important;
+      position: absolute !important;
+      background-color: #0F5156 !important;
+      height: 4px !important;
+      bottom: -5px !important;
+      width: 100%;
+      border-radius: 14px;
+      left: 0;
+    }
+  }
+
+  .fc-event-time {
+    display: none;
+  }
+
+  a.fc-col-header-cell-cushion {
+    margin-left: -4px;
+  }
+
+  .time-grid-week {
+    position: relative;
+  }
+
+  .time-grid-week::before {
+    position: absolute;
+    content: '';
+    border-radius: 14px;
+    background-color: red;
+    left: 0;
+    height: 100%;
+    width: 10px;
+  }
+
+  .fc-daygrid-day-frame {
+    .fc-h-event {
+      border: none !important;
+    }
+  }
+
+  .fc-h-event {
+    border: none !important;
+  }
+
+  td.fc-day-other {
+    background-color: #F5F5F5 !important;
+
+    .fc-daygrid-day-frame {
+      .fc-daygrid-day-top {
+        a {
+          color: rgba(15, 81, 86, 0.5) !important;
+        }
+      }
+    }
+  }
+
+  .fc-daygrid-day-bottom {
+    .fc-daygrid-more-link.fc-more-link {
+      background-color: #0C797D !important;
+      border-radius: 10px !important;
+      padding: 4px 12px !important;
+      font-weight: $fw-700 !important;
+      font-size: $fs-16 !important;
+      line-height: $lh-24 !important;
+      color: #fff !important;
+    }
+  }
+
+  .fc-more-popover {
+    max-height: 95%;
+    overflow-y: auto;
+  }
+
+  .fc-scroller.fc-scroller-liquid-absolute {
+    .fc-daygrid-body.fc-daygrid-body-unbalanced {
+      .fc-daygrid-day-frame.fc-scrollgrid-sync-inner {
+        height: 160px !important;
+      }
+    }
+  }
+
+  // td.fc-daygrid-day.fc-day.fc-day-thu.fc-day-future  {
+  //   border-radius: 14px !important;
+  // }
+
+  .fc-timegrid-event.fc-v-event {
+    border: none !important;
+  }
+
+  .fc-col-header-cell-cushion {
+    color: #0F5156 !important;
+    font-size: $fs-24 !important;
+    font-weight: $fw-400 !important;
+    line-height: $lh-32 !important;
+  }
+
+  .fc-daygrid-day-number,
+  .fc-event-title.fc-sticky {
+    font-size: $fs-24 !important;
+    color: #0F5156 !important;
+    font-weight: $fw-700;
+  }
+
+ .fc-more-popover.fc-popover {
+      background: #FFFFFF;
+      border-radius: 16px 0px 0px 16px;
+      right: 0;
+      left: auto !important;
+      width: 375px;
+      height: 100% !important;
+      max-height: 500px ;
+      // position: fixed !important;
+    .fc-popover-header {
+      background: linear-gradient(90deg, #34BC85 0%, #289D6E 100%);
+      padding: 13px 12px;
+    }
+    .fc-popover-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+    .fc-popover-close {
+      color: #fff;
+      opacity: 1 !important;
+    }
+    .main_text_wraper {
+      padding: 12px 12px !important;
+    }
+  }
+  
+
+  // ***********************************************Media Queries
+
+  @media screen and (max-width: 1250px) {
+    .heading {
+      margin-top: 15px !important;
+      margin-bottom: 10px !important;
+      margin: 0 !important;
+    }
+
+    .checkbox-filter>li {
+      align-items: center !important;
+    }
+
+    .fc-toolbar-chunk {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .monthTitle {
+      font-size: 8px !important;
+      font-weight: 400 !important;
+      line-height: 15px !important;
+    }
+
+    .fc-col-header-cell-cushion,
+    .fc-daygrid-day-number,
+    .fc-event-title.fc-sticky {
+      font-size: 8px !important;
+    }
+
+    td.fc-timegrid-axis.fc-scrollgrid-shrink {
+      font-size: 11px;
+    }
+
+    td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink {
+      font-size: 11px;
+    }
+
+    button.fc-today-button.fc-button.fc-button-primary {
+      font-size: 12px !important;
+    }
+
+    button.fc-next-button.fc-button.fc-button-primary,
+    button.fc-prev-button.fc-button.fc-button-primary {
+      height: 30px;
+      width: 30px;
+    }
+
+    span.fc-icon.fc-icon-chevron-right,
+    span.fc-icon.fc-icon-chevron-left {
+      left: 2px !important;
+    }
+
+    // h2#fc-dom-1 {
+    //   font-size: 18px;
+    // }
+
+    button.fc-dayGridMonth-button.fc-button.fc-button-primary,
+    button.fc-timeGridWeek-button.fc-button.fc-button-primary,
+    button.fc-timeGridDay-button.fc-button.fc-button-primary,
+    button.fc-timeGridDay-button.fc-button.fc-button-primary.fc-button-active,
+    button.fc-timeGridWeek-button.fc-button.fc-button-primary.fc-button-active,
+    button.fc-timeGridMonth-button.fc-button.fc-button-primary.fc-button-active {
+      font-size: 14px !important;
+    }
+
+    .addEventBtn {
+      font-size: 12px !important;
+    }
+
+    .fc-toolbar-chunk {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width:350px) {
+    .calenderpadding {
+      padding: 20px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .calendar-wrapper {
+    .fc-toolbar-title {
+      font-size: 24px !important;
+    }
+
+    .fc-toolbar-chunk {
+      .fc-myCustomButton-button {
+        padding: 11px 26px !important;
+        font-size: 14px !important;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+// fc-daygrid-day fc-day fc-day-tue fc-day-past
+// fc-daygrid-day fc-day fc-day-mon fc-day-past

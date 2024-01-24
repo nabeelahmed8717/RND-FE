@@ -1,0 +1,24 @@
+.add-rnd-expert-system-form-wrapper{
+.wrap-add-rnd-expert-system{
+.MuiInputBase-formControl {
+          font-family: $font-source-sans-pro !important;
+          color: $dark-color !important;
+          line-height: $lh-24 !important;
+          font-size: $fs-16 !important;
+          font-weight: $fw-600 !important;
+          border-radius: 3px;
+        }
+  
+        .Mui-focused fieldset {
+          border-color: $dark-green !important;
+        }
+  
+        .MuiTextField-root {
+          border-color: $dark-green !important;
+  
+          &:hover fieldset {
+            border: 1px solid $primary-color;
+          }
+        }
+    }
+}

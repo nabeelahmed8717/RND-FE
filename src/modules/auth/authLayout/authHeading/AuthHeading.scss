@@ -1,0 +1,111 @@
+.signin-form-heading {
+    justify-content: flex-start;
+
+    .signin-heading {
+        // height: 50vh;
+        justify-content: flex-end;
+
+        h2 {
+            margin: 0;
+            max-width: 700px;
+        }
+
+        p {
+            letter-spacing: 1.5px;
+            margin: 0;
+        }
+
+    }
+
+    .transition-heading {
+        animation: fadeIn ease 2s;
+        position: relative;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .signin-form-heading {
+        .signin-heading {
+            h2 {
+                font-size: 60px !important;
+                line-height: 60px !important;
+            }
+
+            p {
+                font-size: 20px !important;
+                line-height: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    .signin-form-heading {
+        .signin-heading {
+            h2 {
+                font-size: 65px !important;
+                line-height: 65px !important;
+            }
+
+            p {
+                font-size: 20px !important;
+                line-height: 25px !important;
+                padding-top: 15px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .signin-form-heading {
+        .signin-heading {
+            height: auto !important;
+            margin: 15px 0;
+        }
+
+        .logo {
+            position: relative !important;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .signin-form-heading {
+        .signin-heading {
+            h2 {
+                font-size: 40px !important;
+                line-height: 40px !important;
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 100% !important;
+            max-width: 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .signin-form-heading {
+        text-align: center !important;
+    }
+}

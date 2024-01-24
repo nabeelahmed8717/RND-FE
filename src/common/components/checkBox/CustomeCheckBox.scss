@@ -1,0 +1,31 @@
+.custom-Checkbox-wrapper {
+  .remember-checkbox[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none;
+    height: 22px !important;
+    width: 22px !important;
+    border: 1.5px solid #0f5156 !important;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: url("../../../assets/images/auth/check.png");
+      color: #fff;
+      position: relative;
+      opacity: 0;
+      font-size: 15px;
+      bottom: 0px;
+      right: -3px;
+      top: 0;
+    }
+    &:checked {
+      background-color: #0f5156;
+      border: none;
+      height: 22px;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

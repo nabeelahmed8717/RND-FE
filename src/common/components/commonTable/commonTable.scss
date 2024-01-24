@@ -1,0 +1,29 @@
+@import "/src/styles/variables";
+
+.table-main {
+  table thead th {
+    box-shadow: inset 0 -2px 0 $primary-color;
+    text-transform: capitalize;
+  }
+  .common-table-header {
+    thead tr:nth-child(1) th {
+      background: $white-color;
+      position: sticky;
+      position: -webkit-sticky;
+      top: -1px;
+      z-index: 8;
+    }
+  }
+
+  .table-hover {
+    height: 60px;
+
+    &:hover {
+      background: #e6fff4 !important;
+    }
+
+    .table-cell {
+      padding: 13px 5px 13px 20px;
+    }
+  }
+}

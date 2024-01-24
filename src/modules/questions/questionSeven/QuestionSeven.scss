@@ -1,0 +1,23 @@
+.question-seven {
+  input {
+    box-sizing: border-box !important;
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+
+    color: $dark-color !important;
+
+    line-height: $lh-24 !important;
+    width: 100%;
+    font-size: $fs-16 !important;
+    height: 48px;
+    width: 100%;
+  }
+
+  .Mui-focused fieldset :hover {
+    border-color: $dark-green !important;
+  }
+
+
+}

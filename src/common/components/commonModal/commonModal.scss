@@ -1,0 +1,30 @@
+.wrap-global-modal-btn {
+  .main-global-button {
+    padding: 12px 36px;
+    line-height: 24px;
+    border: none;
+    // border-radius: 3px;
+    // // width: 99px;
+    // // height: 48px;
+    // background: $btn-color;
+  }
+
+  fieldset {
+    &:hover {
+      border-color: #17884D !important;
+    }
+  }
+}
+
+// @media only screen and (max-width: 1280px) {
+//   .wrap-global-modal-btn {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     width: 100%;
+
+//     .main-global-button {
+//       margin: 0 auto;
+//     }
+//   }
+// }

@@ -1,0 +1,90 @@
+@import '../../../styles/variables.scss';
+
+.calendar-add-modal-wrapper {
+    .calendar-modal-field-wrap {
+        .MuiInputBase-root {
+            height: 48px !important;
+        }
+
+    }
+
+    // .modal-date-icon {
+    //     input[type=date]::-webkit-datetime-edit-text,
+    //     input[type=date]::-webkit-datetime-edit-month-field,
+    //     input[type=date]::-webkit-datetime-edit-day-field,
+    //     input[type=date]::-webkit-datetime-edit-year-field,
+    //     input[type="date"]::-webkit-inner-spin-button,
+    //     input[type="date"]::-webkit-calendar-picker-indicator {
+    //         display: none;
+    //     }
+    // }
+
+    input[type=time]::-webkit-calendar-picker-indicator {
+        background: url("../../../assets/images/calendar/clock-icon.png");
+        background-repeat: no-repeat;
+    }
+
+    // input[type=date]::-webkit-calendar-picker-indicator {
+    //     background: url("../../../assets/images/calendar/calendar-icon.png");
+    //     background-repeat: no-repeat;
+    //     opacity: 1 !important;
+    //     display: block;
+    // }
+
+    .add-form-wrapper {
+        .modal-btn {
+            padding: 13px 33px !important;
+        }
+    }
+
+    .pb-1 {
+        padding-bottom: 3px;
+    }
+}
+
+.event-type-field {
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        left: 8px;
+        top: 8px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        // background-color: #FF4A55;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        right: 8px;
+        top: 8px;
+    }
+}
+
+.event-type-field:nth-child(1)::after{
+    background: #e33635;
+}
+
+.event-type-field:nth-child(2)::after{
+    background: #ef8842;
+}
+
+.event-type-field:nth-child(3)::after{
+    background: #4285F4;
+}
+
+.event-type-field:nth-child(4)::after{
+    background: #33B679;
+}
+
+.event-type-field:nth-child(5)::after{
+    background: #5F5F5F;
+}

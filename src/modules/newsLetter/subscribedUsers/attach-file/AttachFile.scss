@@ -1,0 +1,23 @@
+.wrapper-attach-file{
+    .border-dashed{
+        border:1px dashed #CCCCCC;
+        border-radius: 4px;
+    }
+    .upload-container-height{
+        height: 127px;
+        overflow: auto;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .bg-grey-icon{
+        background-color: #9f9c9c;
+    }
+    .dragged{
+        background: rgb(223, 223, 223);
+    }
+    .max-dull{
+        color: #B6BABF;
+    }
+}

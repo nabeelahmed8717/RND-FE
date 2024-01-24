@@ -1,0 +1,172 @@
+.dashboard-reminders-wrapper {
+  // min-height: 339px;
+  box-sizing: border-box !important;
+  min-height: 339px;
+  height: 100%;
+
+  .reminders-heading {
+    padding-left: 1.2em !important;
+    padding-right: 1.5em !important;
+
+    .reminders-tag {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .gap-10 {
+    gap: 10px;
+  }
+
+
+
+  .reminder-cardssss {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+
+    .reminder-cards {
+      position: absolute;
+      left: 0;
+      z-index: 8 !important;
+      top: 0;
+      width: 100%;
+
+      .reminder-single-card {
+        position: absolute;
+        margin: 1rem 1.25rem 0.5rem 1.25rem;
+        padding: 0em 1em 1em 1em;
+        min-height: 205px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        // width: auto;
+        width: 85%;
+        height: 100%;
+        top: 5px;
+
+        animation-name: slide;
+        animation-duration: 3s;
+        // animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+
+        .reminder-card-status {
+          border: 1.5px solid #FFC107;
+          border-radius: 3px;
+          height: 20px;
+          padding: 6px;
+        }
+
+        .reminder-card-date {
+          top: 81%;
+          right: 5%;
+        }
+      }
+    }
+  }
+
+
+
+  .bell-heading {
+    p {
+      line-height: 20px;
+    }
+  }
+
+  .activity-details {
+    white-space: pre-line;
+  }
+
+  .urgent-btn {
+    p {
+      line-height: 0;
+    }
+  }
+
+  .reminder-amount-show {
+    background-color: #198754 !important;
+    border-radius: 50px !important;
+    width: 20px !important;
+    height: 22px !important;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+
+}
+
+@keyframes slide {
+  from {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    margin-left: -1400px;
+    transform: rotate(-20deg);
+  }
+}
+
+.upcoming-card {
+  position: absolute;
+  margin: 1rem 1.25rem 0.5rem 1.25rem;
+  padding: 0em 1em 1em 1em;
+  min-height: 205px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  // width: -webkit-fill-available !important;
+  width: 85%;
+  height: 100%;
+  top: 5px;
+  z-index: -1 !important;
+
+
+  .reminder-card-status {
+    border: 1.5px solid #FFC107;
+    border-radius: 3px;
+    height: 20px;
+    padding: 6px;
+  }
+
+  .reminder-card-date {
+    top: 85%;
+    right: 3%;
+  }
+
+  .reminder-card-contents {
+    display: flex;
+
+    p {
+      width: 50%;
+      display: flex;
+    }
+  }
+}
+
+.wrapper-inner-card-contents {
+  width: 100%;
+
+
+  .reminder-inner-card {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .gripper-right-inner {
+    .row-inner-content {
+      p {
+        margin: 0;
+      }
+
+    }
+  }
+
+  .inner-head {
+    width: 100px;
+    margin-left: 1.8rem !important;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .color-dull {
+    color: #343A40;
+    opacity: 0.5;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+}

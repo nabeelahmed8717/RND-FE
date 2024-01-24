@@ -1,0 +1,17 @@
+@import "/src/styles/variables";
+
+.ClaimsSearchFilters {
+  .MuiOutlinedInput-input {
+    padding: 15px 12px;
+    // height: 54px;
+    font-family: $font-source-sans-pro !important;
+    font-weight: $fw-600 !important;
+    font-size: $fs-16 !important;
+  }
+
+
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+}

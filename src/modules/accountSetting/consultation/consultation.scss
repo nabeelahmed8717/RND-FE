@@ -1,0 +1,34 @@
+.consultation {
+  // width: 100% !important;
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background: url("../../../assets/images/accountsettings/clock.png") no-repeat;
+  }
+  
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+    height: 48px !important;
+  }
+
+  .save-button {
+    padding: 12px 36px;
+    line-height: 24px;
+    border: none;
+    border-radius: 3px;
+    font-family: $font-source-sans-pro !important;
+
+    &:hover {
+      color: white;
+      background: linear-gradient(92.66deg,
+          #0f5156 0%,
+          #044348 100%) !important;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../../../styles/variables.scss';
+
+.loginFooter {
+  .footerEnd {
+
+    ul {
+      list-style: none;
+      gap: 20px;
+
+      li {
+        padding-right: 14px;
+        list-style: none;
+        height: 25px;
+        border-right: 1px solid $primary-color;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .loginFooter {
+    .footerEnd {
+      ul {
+        li {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}

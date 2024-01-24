@@ -1,0 +1,232 @@
+@import "/src/styles/_variables.scss";
+
+$bg-green-date: #34bc85;
+
+.bg-green-date {
+  background-color: $bg-green-date !important;
+}
+
+.rnd-expert {
+  // height: 202px;
+  // height: 579px;
+  // max-height: 302px;
+  // height: 100%;
+  padding: 0em 0.5em;
+  box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+    0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+
+  .m-0 {
+    margin: 0;
+  }
+
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .expert-top-heading {
+    padding: 0em 0.5em;
+  }
+
+
+  .d-none-media {
+    display: block;
+
+    @media screen and (min-width:900px) and (max-width:1565px) {
+      display: none !important;
+      background-color: red !important;
+    }
+  }
+
+  .expert-users {
+    padding: 1em 0.5em;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: #0f5156;
+    }
+
+    @media screen and (min-width:900px) {
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  @media screen and (min-width:900px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.expert-left-img {
+  width: 45px !important;
+  height: 50px !important;
+}
+
+.selected-rnd-expert,
+.selectedClaim {
+  color: #fff !important;
+  background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+
+  .calender-hover {
+    content: url("../../../assets/images/dashboard/rndExperts/calendar-add-white.png");
+  }
+
+  .message-hover {
+    content: url("../../../assets/images/dashboard/rndExperts/message-text-white.png");
+  }
+}
+
+.primary-bg-hover {
+  color: #343a40;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+  }
+}
+
+.bg-linear-gradient {
+  background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+}
+
+.rnd-expert-modal {
+  // overflow: hidden;
+
+  .rnd-expert-border-end {
+    border-right: 1px solid #343a403a;
+  }
+
+  // padding: 0 30px;
+  // input {
+  //   padding: 12.5px 14px;
+  // }
+  // .error-icon {
+  //   margin-top: 10px;
+  // }
+  // .add-payment-btn {
+  //   float: right;
+  // }
+
+  .modal-heading {
+    padding-left: 1em;
+    padding-top: 0.6em;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  .modal-expert {
+    // max-width: 500px;
+    color: #343a40;
+
+    .calender-span {
+      margin-right: 1.5rem;
+    }
+
+    &:hover {
+      color: #fff;
+      background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+
+      .calender-hover {
+        content: url("../../../assets/images/dashboard/rndExperts/calendar-add-white.png");
+      }
+
+      .message-hover {
+        content: url("../../../assets/images/dashboard/rndExperts/message-text-white.png");
+      }
+    }
+  }
+}
+
+.rnd-expert-add-card-modal {
+  padding: 0 30px;
+
+  input {
+    padding: 12.5px 14px;
+  }
+
+  .error-icon {
+    margin-top: 10px;
+  }
+
+  .add-payment-btn {
+    float: right;
+  }
+}
+
+.book-session-top-icons {
+  .modal-heading {
+    padding-left: 1em;
+    padding-top: 0.6em;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  // MUI Calendar, Removing border color from calender
+  .MuiInputBase-root-MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+
+  .Mui-selected {
+    color: #fff !important;
+    font-size: 14px !important;
+    background-color: $primary-color !important;
+    font-weight: 700 !important;
+  }
+
+  .MuiPickersCalendarHeader-label {
+    margin-right: 6px !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+
+    .MuiPickersDay-root {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.white-color {
+  color: #fff !important;
+}
+
+.w-fill-available {
+  width: -webkit-fill-available !important;
+}
+
+// .calendar-date-picker {
+//   font-weight: 700 !important;
+//   font-size: 11px !important;
+//   width: 378px !important;
+//   height: 374px !important;
+//   background-color: none !important;
+//   background: transparent !important;
+// }
+
+// Media Query for Expert Section
+@media (min-width: 1248px) and (max-width: 1565px) {
+  .expert-users-grid {
+    width: 205% !important;
+    flex-direction: column !important;
+
+    .expert-users {
+      width: 100% !important;
+
+      .expert-inner-div {
+        margin-left: 0.5rem !important;
+      }
+    }
+
+    .expert-middle-line {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 1565px) and (max-width: 1650px) {
+  .expert-users-grid {
+    .expert-users {
+      .expert-inner-div {
+        margin-left: 0.5rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.change-email {
+  .cancel-Profile-Button {
+    padding: 12px 36px;
+    line-height: 24px;
+
+    &:hover {
+      border: 1px solid $primary-color;
+      outline: $primary-color;
+    }
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+    height: 48px !important;
+  }
+
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $dark-green;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+}

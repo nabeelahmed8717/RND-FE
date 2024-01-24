@@ -1,0 +1,54 @@
+.recent-activities-wrapper {
+  box-sizing: border-box !important;
+
+
+
+  .day-activity-wrapper {
+    overflow-y: scroll !important;
+    max-height: 162px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  .yesterday-activity-wrapper {
+    overflow-y: scroll !important;
+    max-height: 90px;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  .recent-activity-heading {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .recent-activity-description {
+    margin-bottom: 50px;
+  }
+
+  .recent-activities-text {
+    margin-top: 30px;
+    color: #343a40;
+    opacity: 0.5;
+  }
+
+  .day-status-heading {
+    margin-top: 50px;
+  }
+}
+
+.h-579 {
+  min-height: 579px;
+  height: 100%;
+}
+
+.h-339 {
+  min-height: 339px !important;
+  height: 100%;
+}

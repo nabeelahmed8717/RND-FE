@@ -1,0 +1,352 @@
+.ql-toolbar .ql-stroke,
+.ql-toolbar .ql-fill,
+.ql-toolbar .ql-picker {
+  stroke: $gray-color !important;
+}
+.ql-toolbar {
+  background: $white-color !important;
+  box-shadow: -8px 8px 45px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  border: 1px solid #dde2e6;
+}
+.ql-bubble .ql-picker.ql-expanded .ql-picker-options {
+  z-index: 9 !important;
+}
+.ql-picker-options {
+  background: $white-color !important;
+  box-shadow: 0px 8px 45px rgba(0, 0, 0, 0.2) !important;
+}
+.ql-picker-options span.ql-picker-item,
+.ql-bubble .ql-toolbar button.ql-link :hover,
+.ql-bubble .ql-toolbar button:hover,
+.ql-bubble .ql-picker,
+.ql-bubble .ql-toolbar .ql-picker-label:hover,
+.ql-picker-label.ql-active {
+  color: #434242 !important;
+}
+.ql-tooltip {
+  z-index: 99 !important;
+}
+.ql-toolbar {
+  padding: 10px 0px;
+}
+span.ql-tooltip-arrow {
+  border-bottom: 6px solid $white-color !important;
+}
+span.ql-formats:nth-child(1),
+span.ql-formats:nth-child(2) {
+  border: 1px solid #434242;
+  padding: 4px 0px;
+  border-radius: 8px;
+}
+.ql-tooltip-editor input[type="text"] {
+  color: #434242 !important;
+}
+.ql-bubble .ql-toolbar button.ql-link {
+  height: 30px !important;
+}
+
+// Change the font-family css
+
+.ql-picker.ql-font {
+  .ql-picker-item {
+    font-size: 0;
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+.ql-picker.ql-font {
+  .ql-active {
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  font-family: "Roboto", cursive;
+  content: "Roboto" !important;
+}
+.ql-picker.ql-font .ql-picker-label[data-value="Raleway"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Raleway"]::before {
+  font-family: "Raleway", cursive;
+  content: "Raleway" !important;
+}
+.ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before {
+  font-family: "Montserrat", cursive;
+  content: "Montserrat" !important;
+}
+.ql-picker.ql-font .ql-picker-label[data-value="Lato"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Lato"]::before {
+  font-family: "Lato", cursive;
+  content: "Lato" !important;
+}
+.ql-picker.ql-font .ql-picker-label[data-value="Rubik"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Rubik"]::before {
+  font-family: "Rubik", cursive;
+  content: "Rubik" !important;
+}
+
+/* Set content font-families */
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+.ql-font-Raleway {
+  font-family: "Raleway";
+}
+.ql-font-Montserrat {
+  font-family: "Montserrat";
+}
+.ql-font-Lato {
+  font-family: "Lato";
+}
+.ql-font-Rubik {
+  font-family: "Rubik";
+}
+
+// Font size change
+
+.ql-bubble .ql-picker.ql-size .ql-picker-label::before {
+  content: attr(data-value) !important;
+}
+.ql-size .ql-picker-item[data-value="12px"]::before {
+  content: "12" !important;
+  font-size: 12px !important;
+}
+
+.ql-size .ql-picker-item[data-value="14px"]::before {
+  content: "14" !important;
+  font-size: 14px !important;
+}
+
+.ql-size .ql-picker-item[data-value="16px"]::before {
+  content: "16" !important;
+  font-size: 16px !important;
+}
+.ql-size .ql-picker-item[data-value="18px"]::before {
+  content: "18" !important;
+  font-size: 18px !important;
+}
+.ql-size .ql-picker-item[data-value="20px"]::before {
+  content: "20" !important;
+  font-size: 20px !important;
+}
+.ql-size .ql-picker-item[data-value="24px"]::before {
+  content: "24" !important;
+  font-size: 24px !important;
+}
+
+// Change Dropdown Icon
+
+.ql-font .ql-picker-label svg,
+.ql-size .ql-picker-label svg {
+  width: 0px !important;
+}
+.ql-font .ql-picker-label:after,
+.ql-size .ql-picker-label:after {
+  content: "▼";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 4px !important;
+  right: 12px;
+  height: 8px;
+  width: 8px;
+}
+
+//custom class css
+// .editor-box .quill:nth-child(1) {
+//   min-height: 80px;
+// }
+// .editor-box .quill:nth-child(2) {
+//   margin-bottom: 30px;
+// }
+// .editor-box .quill:nth-child(3) {
+//   min-height: 100px;
+// }
+// .editor-box .quill:nth-child(1) > .ql-container {
+//   font-size: 30px !important;
+//   font-weight: 700 !important;
+// }
+// .editor-box .quill:nth-child(2) > .ql-container {
+//   font-size: 24px !important;
+//   font-weight: 600 !important;
+// }
+// .editor-box .quill:nth-child(3) > .ql-container {
+//   font-size: 16px !important;
+// }
+// .editor-box .quill:nth-child(1) > .ql-container > .ql-editor.ql-blank::before,
+// .editor-box .quill:nth-child(2) > .ql-container > .ql-editor.ql-blank::before,
+// .editor-box .quill:nth-child(3) > .ql-container > .ql-editor.ql-blank::before {
+//   font-weight: 700;
+//   color: #434242 !important;
+//   font-style: normal;
+//   text-align: center;
+//   font-family: Roboto !important;
+// }
+// .editor-box .quill:nth-child(1) > .ql-container > .ql-editor.ql-blank::before {
+//   font-size: 45px;
+// }
+// .editor-box .quill:nth-child(2) > .ql-container > .ql-editor.ql-blank::before {
+//   font-size: 30px;
+// }
+// .editor-box .quill:nth-child(3) > .ql-container > .ql-editor.ql-blank::before {
+//   font-size: 16px;
+// }
+
+.add-field-background {
+  background-color: rgb(192 192 192 / 18%) !important;
+}
+
+.add-title-here {
+  font-weight: 500;
+  color: #434242 !important;
+  text-align: center;
+  .ql-editor.ql-blank {
+    font-size: 64px !important;
+  }
+  .ql-editor p {
+    font-size: 64px !important;
+    font-family: "Source Sans Pro";
+  }
+  .ql-editor.ql-blank {
+    &::before {
+      text-align: center !important;
+      font-style: normal !important;
+      font-family: "Source Sans Pro" !important;
+    }
+  }
+}
+
+.add-name {
+  font-weight: 500;
+  color: #434242 !important;
+  text-align: center;
+  .ql-editor.ql-blank {
+    font-size: 32px !important;
+  }
+  .ql-editor p {
+    font-size: 32px !important;
+  }
+  .ql-editor.ql-blank {
+    &::before {
+      text-align: center !important;
+      font-style: normal !important;
+      font-family: "Source Sans Pro";
+    }
+  }
+}
+
+.add-description {
+  font-weight: 500;
+  color: #152536 !important;
+  text-align: center;
+  .ql-editor.ql-blank {
+    font-size: 16px !important;
+  }
+  .ql-editor p {
+    font-size: 16px !important;
+  }
+  .ql-editor.ql-blank {
+    &::before {
+      text-align: center !important;
+      font-style: normal !important;
+      font-family: "Source Sans Pro" !important;
+    }
+  }
+}
+
+// .css-e0aa6l-MuiStack-root {
+//   div {
+//     font-weight: 700;
+//     color: #434242 !important;
+//     text-align: center;
+//     font-family: 'Roboto', sans-serif;
+//     .quill {
+//       .ql-container{
+//         font-size: 64px !important;
+//         font-family: Roboto !important;
+//         .ql-editor.ql-blank{
+//           &::before{
+//             text-align: center !important;
+//             font-style: normal !important;
+//             font-family: 'Roboto', sans-serif;
+//           }
+//         }
+//       }
+//     }
+//     &:nth-child(3) {
+//       color: #434242 !important;
+//       text-align: center;
+//       font-family: Roboto !important;
+//       .quill {
+//         .ql-container {
+//           font-size: 16px !important;
+//           .ql-editor.ql-blank {
+//             &::before {
+//               text-align: center !important;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     &:nth-child(2) {
+//       font-weight: 700;
+//       color: #434242 !important;
+//       text-align: center;
+//       font-family: Roboto !important;
+//       .quill {
+//         .ql-container {
+//           font-size: 32px !important;
+//           .ql-editor.ql-blank {
+//             &::before {
+//               text-align: center !important;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 290px) {
+  .editor-box .quill:nth-child(1) > .ql-container > .ql-editor.ql-blank::before {
+    font-size: 30px;
+  }
+  .editor-box .quill:nth-child(2) > .ql-container > .ql-editor.ql-blank::before {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  .css-e0aa6l-MuiStack-root {
+    div {
+      font-weight: 700;
+      color: #434242 !important;
+      // text-align: center;
+      font-family: "Source Sans Pro";
+      .quill {
+        .ql-container {
+          font-size: 9vw !important;
+        }
+      }
+      &:nth-child(3) {
+        .quill {
+          .ql-container {
+            font-size: 3vw !important;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .quill {
+          .ql-container {
+            font-size: 6vw !important;
+          }
+        }
+      }
+    }
+  }
+}

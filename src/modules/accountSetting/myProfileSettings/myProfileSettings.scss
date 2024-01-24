@@ -1,0 +1,74 @@
+.my-profile {
+  .bg-disabled {
+    background-color: #f1f1f1 !important;
+  }
+
+  .bgHover:hover {
+    background: #CCCCCC;
+    color: $dark-color;
+  }
+
+  .profile-info-change-pswrd-email {
+    padding: 14px 35.71px;
+    border: 1px solid #fff;
+
+    background: none;
+    outline: none;
+
+    &:hover {
+      border: 1px solid $primary-color;
+      outline: $primary-color;
+    }
+  }
+
+  .save-button {
+    border: none;
+    // width: 105px;
+    // height: 48px;
+    padding: 12px 36px;
+    line-height: 24px;
+
+  }
+
+  .account-setting-leftbar {
+    @media screen and (min-width: 1600px) {
+      max-width: 350px;
+    }
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-400 !important;
+    height: 48px !important;
+  }
+
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 2px solid $dark-green;
+  }
+
+  .Mui-focused fieldset {
+    border: 2px solid $dark-green !important;
+  }
+
+  .search-input-w-40 {
+    width: 30px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .my-profile .account-setting-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .my-profile .css-8ggpqr-MuiGrid-root {
+    padding-left: 0px;
+
+  }
+}

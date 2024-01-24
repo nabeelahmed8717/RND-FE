@@ -1,0 +1,17 @@
+.status-inLine{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    .status-icon{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    .status-active{
+        background-color: #FFC107 !important;
+    }
+    .status-inActive{
+        background-color: #B3B3B3 !important;
+    }
+}

@@ -1,0 +1,35 @@
+.add-subscribe-user-form-wrapper {
+  .form-input {
+    flex-direction: column;
+    row-gap: 27px;
+    margin-bottom: 3vh;
+    .errors-labels {
+      margin-top: 5px;
+    }
+  }
+
+  .MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    height: 48px !important;
+  }
+
+  .MuiOutlinedInput-input {
+    height: 31px;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+}
+
+.overflow-ellipsis {
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-name-ellipsis {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

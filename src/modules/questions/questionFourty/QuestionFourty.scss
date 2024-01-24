@@ -1,0 +1,12 @@
+.wrap-question-14{
+  .question-14-input-fields{
+    padding: 15px;
+    &::placeholder{
+      color:  #343A40;
+      opacity: .5;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: 'Source Sans Pro';
+    }
+  }  
+}

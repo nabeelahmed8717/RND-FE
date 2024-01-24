@@ -1,0 +1,31 @@
+.wrap_breadcrumbs {
+  max-width: 100%;
+  min-height: 44px;
+  background: #ffffff;
+  box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+  padding: 5px 30px;
+  margin-bottom: 1.2rem;
+
+  a {
+    text-decoration: none;
+
+  }
+
+  .dashboard-icon {
+    margin-right: 15px;
+  }
+
+  .css-ptiqhd-MuiSvgIcon-root:last-child {
+    opacity: 1 !important;
+    color: #0f5156 !important;
+  }
+
+  .css-ptiqhd-MuiSvgIcon-root:first-child {
+    opacity: 0.3;
+    color: #0f5156 !important;
+  }
+}
+
+.warapper-wrap_breadcrumbs .warp-alert-notification {
+  margin-top: 46px;
+}

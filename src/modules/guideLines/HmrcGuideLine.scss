@@ -1,0 +1,89 @@
+.wrapper-hrmc-guidelines {
+    background: #FFFFFF;
+    border: 1px solid #DADEE8;
+    box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+    // padding: 30px;
+    padding: 20px 30px 10px 30px;
+
+    .hmrc-table {
+        padding-top: 1px;
+    }
+
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hmrc-input-search {
+        position: relative;
+        padding-bottom: 6px;
+        margin-top: 20px;
+    }
+
+    .hmrc-input-search input {
+        text-indent: 10px;
+        background: $white-color;
+        outline: none;
+        padding: 0px 20px 0px 50px;
+        box-sizing: border-box;
+        border: 1px solid #DADEE8;
+        height: 54px;
+        width: 400px;
+        border: 1px solid #DADEE8;
+        color: $dark-color;
+
+        &::placeholder {
+            opacity: 0.5;
+            color: $dark-color;
+            font-weight: $fw-600;
+            font-size: $fs-16;
+            font-family: $font-source-sans-pro;
+        }
+
+        &:hover {
+            border: 1px solid $dark-green;
+            outline: none;
+        }
+    }
+
+    .hmrc-icon {
+        position: absolute;
+        top: 18px;
+        left: 17px;
+
+    }
+
+    thead tr:nth-child(1) th {
+        background: $white-color;
+        position: sticky;
+        top: 0;
+        z-index: 8;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper-hrmc-guidelines .hmrc-input-search input {
+        height: 54px;
+        width: 100%;
+    }
+
+    .hmrc-icon {
+        position: absolute;
+        top: 33px;
+        left: 17px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .wrapper-hrmc-guidelines .hmrc-input-search input {
+        height: 54px;
+        width: 200px;
+    }
+
+    .hmrc-icon {
+        position: absolute;
+        top: 33px;
+        left: 17px;
+    }
+}

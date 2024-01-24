@@ -1,0 +1,122 @@
+.wrapper-chat-box {
+  height: 570px;
+  background: #0F5156;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  .chat-top-main-heading {
+    height: 64px;
+  }
+
+  .chat-heading {
+    margin-left: 18px;
+  }
+
+  .chat-margin {
+    margin: 4px;
+  }
+
+  .chat-text {
+
+    margin-left: 18px;
+  }
+
+  .chat-heading,
+  .chat-text {
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+
+  .wrap-chat-main-content {
+    height: 436px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+
+  .chatbot-icon {
+    margin-top: 18px;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .chat-hi,
+  .chat-what {
+    background-color: #d9e7ea;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 15px;
+    margin-top: 20px;
+  }
+
+  .chat-hi {
+    width: 35px;
+    margin-left: 60px;
+  }
+
+  .chat-what {
+    width: 170px;
+  }
+
+  .chat-options-text-tax-relief,
+  .chat-options-text-eligibilty {
+    height: 30px;
+    // margin-top: 46px;
+    margin-left: 22px;
+    line-height: 15px;
+    background: $white-color;
+    border: 1px solid $primary-color;
+
+  }
+
+  .wrap-chat-options {
+    margin-top: 20px;
+  }
+
+  .chat-options-text-tax-relief {
+    width: 190px;
+  }
+
+  .chat-options-text-eligibilty {
+    margin-top: 6px;
+    width: 210px;
+  }
+
+  .chat-input {
+    margin-bottom: 0px;
+  }
+
+  .chat-input-field {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height: 40px;
+    width: 260px !important;
+    border: solid transparent;
+    outline: none;
+    text-indent: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+
+  input::placeholder {
+    color: #CACACA;
+    font-weight: $fw-400;
+    font-size: $fs-12;
+    font-family: 'Roboto';
+    font-style: normal;
+  }
+
+  .chat-footer-action {
+    border-top: 1px solid #C4C4C4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 14px;
+    width: 100%;
+  }
+}

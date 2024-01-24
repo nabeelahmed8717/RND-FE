@@ -1,0 +1,17 @@
+.loader-wrapper {
+
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    min-height: 80vh;
+  
+    @media screen and (max-width: 450px) {
+  
+      min-height: 90vh;
+  
+    }
+  
+  }

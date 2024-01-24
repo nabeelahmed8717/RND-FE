@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import "../styles/common.scss";
+
+html,
+body {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+  font-family: $font-source-sans-pro !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    font-family: $font-source-sans-pro !important;
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+  .MuiOutlinedInput-root,
+  .MuiOutlinedInput-input,
+  .MuiInputBase-root {
+    line-height: $lh-24;
+    font-size: $fs-18 ;
+
+
+    &::placeholder {
+      font-size: $fs-18 ;
+      line-height: $lh-24 ;
+      font-weight: $fw-400;
+    }
+  }
+
+
+  // scrollbar-width: thin;
+  // scroll-behavior: smooth;
+  // scrollbar-color: $dark-green;
+
+  // & ::-webkit-scrollbar {
+  //   width: 8px;
+  //   // background-color: red !important;
+  //   border-radius: 50px;
+  // }
+
+  // & ::-webkit-scrollbar-track {
+  //   background-color: $white-color;
+  // }
+
+  // & ::-webkit-scrollbar-thumb {
+  //   background-color: $dark-green;
+  //   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  //   border-radius: 50px;
+  // }
+
+
+}

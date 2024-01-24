@@ -1,0 +1,32 @@
+.collection-wrapper {
+  min-height: 205px;
+  height: 100%;
+
+  .bg {
+    // height: 205px;
+    background: #ff7245;
+    border-radius: 8px;
+    min-height: 200px;
+  }
+
+  .layers {
+    background-image: url("../../../assets/images/dashboard/collections/collectionLayer.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .card-title {
+    color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+  }
+
+  .card-img {
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+
+}

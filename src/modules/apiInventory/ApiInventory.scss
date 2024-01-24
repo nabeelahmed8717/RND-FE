@@ -1,0 +1,46 @@
+.wrap-api-inventory {
+  padding: 25px 30px 10px 30px;
+  border: 1px solid #dadee8;
+
+  h2 {
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .wrap-api-search {
+    position: relative;
+
+    .api-search-input {
+      input {
+        border: 1px solid #dadee8;
+        color: #343a40;
+        text-indent: 20px;
+        padding: 0 0px 0 35px;
+        background: #ffffff;
+
+        &::placeholder {
+          opacity: 0.5;
+          color: #343a40;
+          font-weight: 600;
+          font-family: $font-source-sans-pro;
+          line-height: 24px;
+        }
+
+        &:hover {
+          border: 1px solid $primary-color;
+          outline: none;
+        }
+      }
+    }
+
+    .api-inventory-search-icon {
+      position: absolute;
+      top: 18px;
+      left: 15px;
+    }
+  }
+
+  .wrap-table-api-inventory {
+    margin-top: 15px;
+  }
+}

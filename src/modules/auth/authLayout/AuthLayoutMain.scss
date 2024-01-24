@@ -1,0 +1,30 @@
+.auth-layout-main {
+    height: 100vh;
+    background-image: url(../../../assets/images/auth/authBackGround.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .auth-footer-text {
+        position: absolute;
+        left: 4.17%;
+        bottom: 0rem;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 1rem;
+    }
+}
+
+
+
+@media (max-width:900px) {
+    .auth-layout-main {
+        height: 100%;
+    }
+
+    .auth-footer-text {
+        position: relative !important;
+        margin: 0 !important;
+        padding-top: 1rem !important;
+    }
+}

@@ -1,0 +1,130 @@
+.rnd-tax-calculator {
+  width: auto;
+  // height: 100%;
+  padding: 0em 1em;
+  min-height: 579px;
+  height: 100%;
+
+  // @media screen and (min-width:1550px) {
+  //   max-width: 483px;
+  //   width: 100%;
+  // }
+
+  .mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .h-100 {
+    height: 100%;
+  }
+
+  .white-space-nowrap {
+    white-space: nowrap;
+  }
+
+  // Calculated Claim Styling
+  .calculate-claim {
+    margin: auto 1rem;
+
+    .claims-value {
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+    }
+
+    .pt-4 {
+      padding-top: 4em;
+    }
+  }
+
+
+
+
+  // Tax Calculator Styling
+  .tax-caculator {
+    // margin: 0.5rem;
+    margin: auto;
+    padding-left: 10px;
+
+    .calculator-heading {
+      // padding-left: 1em;
+      margin-bottom: 1rem;
+      max-width: 202px;
+      height: 32px;
+    }
+
+    
+
+    .calculator-btn {
+      background-color: #fff;
+      // max-width: 204px;
+      // width: auto;
+      height: 40px;
+      box-shadow: 0px 2px 4px -2px rgba(24, 39, 75, 0.12),
+        0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+      border: 1px solid $primary-color;
+
+      &:hover {
+        background-color: #0f5156;
+        color: #fff;
+      }
+
+      @media screen and (min-width:1750px) {
+        max-width: 204px !important;
+      }
+    }
+
+    .calculator-input-main {
+      position: relative;
+      margin-bottom: 1.8rem;
+
+      .calculator-input {
+        height: 40px;
+        border-radius: 3px;
+        margin-top: 0.2rem;
+        font-weight: $fw-600 !important;
+        font-size: $fs-16;
+        color: #343a40 !important;
+      }
+
+      .Mui-focused fieldset {
+        border-color: $dark-green !important;
+      }
+
+      .Mui-focused {
+        outline: none !important;
+        border: none !important;
+      }
+
+      .calculator-form-errors {
+        position: absolute;
+        top: 100%;
+      }
+    }
+
+    .calculator-radio-errors {
+      position: absolute;
+      top: 80%;
+    }
+
+    .calculator-submit-btn {
+      height: 40px;
+      min-width: 250px !important;
+      width: 250px !important;
+      border: none;
+      border-radius: 3px !important;
+      background: linear-gradient(90deg, #34bc85 0%, #289d6e 100%);
+      font-size: $fs-14 !important;
+    }
+  }
+}
+
+
+.claims-value{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

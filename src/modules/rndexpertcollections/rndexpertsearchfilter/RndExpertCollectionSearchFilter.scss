@@ -1,0 +1,36 @@
+.filter-wrap-rnd-expert-collections {
+  .MuiOutlinedInput-input {
+    padding: 15px 12px;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+  .MuiOutlinedInput-root {
+    & fieldset {
+      border-color: #cccccc;
+    }
+
+    &:hover fieldset {
+      border-color: $dark-green !important;
+    }
+  }
+
+  .rnd-expert-collection-search-input-filter {
+    text-indent: 0px;
+    background: $white-color;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #dadee8;
+    color: $dark-color;
+
+    &::placeholder {
+      opacity: 0.5;
+      color: $dark-color;
+      font-weight: $fw-600;
+      font-size: $fs-16;
+      line-height: $lh-24;
+      font-family: $font-source-sans-pro;
+    }
+  }
+}

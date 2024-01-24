@@ -1,0 +1,109 @@
+.account-settings {
+  .user-profile-card {
+    border: 1px solid #cccccc;
+    background: #fff;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+      0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    border-radius: 8px;
+    height: 100%;
+    // overflow-y: scroll;
+    width: 1150px;
+
+    padding-bottom: 20px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+
+  .img-profile-box {
+    text-align: center;
+
+    .img-upload-type {
+      display: none;
+    }
+  }
+
+  .account-setting-leftbar {
+    @media screen and (min-width: 1700px) {
+      max-width: 350px;
+    }
+  }
+
+  .profile-card {
+    border: 1px solid #cccccc;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+      0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    border-radius: 8px;
+    .circleBase {
+      border-radius: 50%;
+    }
+    .circle1 {
+      width: 85px;
+      height: 85px;
+      border: 8px solid #289d6e;
+      //    background: linear-gradient(90deg, #34BC85 0%, #289D6E 100%);
+      .profile-img {
+        border-radius: 65px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .account-type {
+    border: 1px solid #cccccc;
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+      0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+    background: #fff;
+    border-radius: 8px;
+
+    &:hover {
+      .half-opacity {
+        opacity: 1 !important;
+      }
+
+      color: white;
+      background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+
+      .account-settings-cards {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .selected-account-type {
+    color: #fff !important;
+    background: linear-gradient(92.66deg, #0f5156 0%, #044348 100%);
+
+    .account-settings-cards {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .selected-profile {
+    filter: brightness(0) invert(1);
+  }
+
+  .image-size {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+
+  .profile-image {
+    border-radius: 6000px;
+    border: 5px solid green;
+  }
+
+  .add-card {
+    // width: 134px;
+    // height: 48px;
+    padding: 12px 36px;
+    line-height: 24px;
+    border: none;
+  }
+}
+
+.svgIcon {
+  background-repeat: no-repeat !important;
+  background: url("../../assets/images/accountsettings/date-icon.png");
+}

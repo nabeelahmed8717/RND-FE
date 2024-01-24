@@ -1,0 +1,20 @@
+.group-question-number-wrapper {
+  .css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input {
+    height: 31px !important;
+  }
+
+  .wrapper-alert-messages {
+    .question-alert-messages {
+      .alert-message {
+        padding: 20px 30px;
+        column-gap: 20px;
+      }
+      .message-info {
+        background-color: #e7fafd;
+      }
+      .message-success {
+        background-color: #e8f3ee;
+      }
+    }
+  }
+}

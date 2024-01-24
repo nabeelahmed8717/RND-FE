@@ -1,0 +1,434 @@
+@import "../../../styles/variables";
+
+.sidebar {
+  position: relative;
+
+  main {
+    padding: 0px;
+    width: 100%;
+    height: 94vh;
+    overflow-y: auto;
+    background-color: $bg-main-body;
+
+    .messageIcon {
+      position: fixed;
+      bottom: 75px;
+      right: 40px;
+      background-color: $primary-color;
+    }
+  }
+
+  .hideDrawer {
+    position: absolute;
+    top: 50px;
+
+    .logo-icon {
+      display: none;
+    }
+  }
+
+  header {
+    background-color: $white-color !important;
+    box-shadow: 5px 7px 26px -5px rgb(218 222 232 / 89%);
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+  }
+
+  .iconHold {
+    padding: 5px;
+  }
+
+  .logo {
+    height: 30px;
+    width: 198px;
+    display: block;
+  }
+
+  .toolbar {
+    padding: 0px;
+    background-color: $white-color !important;
+    min-height: 64px;
+  }
+
+  .mobiletoolbar {
+    min-height: 64px;
+
+    @media only screen and (max-width: 380px) {
+      min-height: 56px;
+    }
+  }
+
+  .logo-icon {
+    height: 30px;
+    display: block;
+    width: 100%;
+    max-width: 50px;
+  }
+
+  //LIST ITEM TEXT
+  .MuiListItemText-primary {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Source Sans Pro";
+  }
+
+  .css-3y1137-MuiStack-root {
+    background-color: $white-color;
+  }
+
+  .avatar {
+    width: 32px !important;
+    height: 32px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .notification-modal {
+    width: 325px !important;
+    top: 58px !important;
+  }
+
+  .profile-modal {
+    width: 200px;
+    top: 58px;
+    right: 20px;
+    z-index: 9999;
+
+    @media only screen and (max-width: 380px) {
+      position: fixed;
+      top: 58px !important;
+      width: 250px !important;
+      margin: 0 auto;
+      right: 0px;
+    }
+  }
+
+  .notification-modal {
+    width: 200px;
+    top: 64px;
+    right: 82px;
+    z-index: 9999;
+    box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+
+    @media only screen and (max-width: 380px) {
+      position: fixed;
+      top: 58px !important;
+      width: 270px !important;
+      margin: 0 auto;
+      right: 20px;
+    }
+  }
+
+  .notification-divider {
+    border: 1px solid #f1f1f1;
+  }
+
+  //profile
+  .profile {
+    gap: 15px;
+    padding: 10px 34px;
+    border-radius: 6px;
+    width: 200px;
+    .profile-image {
+      border-radius: 37.5px;
+      object-fit: cover;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .profile-text {
+    color: $white-color;
+  }
+
+  .link {
+    background-color: $primary-color;
+  }
+
+  .add-icon {
+    margin-top: 5px;
+  }
+
+  .searchInput {
+    height: 45px;
+    width: 90%;
+    border: none;
+    padding: 0px 31px 0px 10px;
+    transition: width 1s ease-in-out;
+    font-weight: $fw-500;
+    font-size: $fs-13;
+    font-family: $font-source-sans-pro !important;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .top-searchInput {
+    height: 45px;
+    width: 100%;
+    border: none;
+    padding: 0px 10px 0px 10px;
+    transition: width 1s ease-in-out;
+    font-family: $font-source-sans-pro !important;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .animatesearch {
+    border: 1px solid $primary-color;
+    box-shadow: 0px 0px 4px 0px #29bb89;
+    width: 450px;
+    height: 50px;
+    transition: width 1s ease-in-out;
+
+    .searchHold {
+      font-weight: $fw-500;
+      font-size: $fs-13;
+
+      ::placeholder {
+        color: $dark-color;
+        opacity: 1;
+        font-weight: $fw-500;
+        font-size: $fs-13;
+      }
+
+      :-ms-input-placeholder {
+        color: $dark-color;
+        font-weight: $fw-500;
+        font-size: $fs-13;
+      }
+
+      ::-ms-input-placeholder {
+        color: $dark-color;
+        font-weight: $fw-500;
+        font-size: $fs-13;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .searchwidth {
+      width: 5%;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .searchwidth {
+      width: 20%;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .search-icon {
+    border-right: 1px solid #e3e2e2;
+    padding-right: 10px;
+    border-radius: 0;
+  }
+
+  .searchInput + .searchIcon {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+  }
+
+  .active,
+  .active .icon span,
+  .active .add-icon svg {
+    color: $white-color;
+  }
+
+  .min {
+    min-width: 40px;
+  }
+
+  .zero {
+    min-width: 40px !important;
+  }
+
+  ul {
+    .active li {
+      background-color: $sub-menu;
+      border-radius: 24px;
+      
+    }
+  .sub-menu-title{
+   padding-top: 13px;
+   margin-left:-30px ;
+}
+
+.wrap-line{
+  margin-top: 22px;
+  
+.submenu-horizontal-line, .submenu-vertical-line{
+  display: block;
+  background-color: $sub-menu;
+}
+.submenu-horizontal-line{
+  height: 40px;
+  width: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ 
+}
+.submenu-vertical-line{
+  height: 3px;
+  width: 12px;
+  position: relative;
+}
+}
+    li .subnav {
+      list-style-type: none;
+      padding: 0;
+      cursor: pointer;
+      color: $white-color;
+      margin-top: 3px;
+      .active li {
+        background-color: #3c3b3b !important;
+        border-radius: 4px;
+        position: relative;
+      
+        // &::before {
+        //   content: "_";
+        //   font-size: 30px;
+        //   color: $white-color;
+        //   line-height: 0;
+        //   margin: 0;
+        //   position: absolute;
+        //   top: 6px;
+        //   padding-left: 20px;
+        // }
+      }
+
+      // li {
+      //   .submenu-before-icon {
+      //     width: 3px;
+      //     height: 35px;
+      //     background-color: $sub-menu;
+      //     margin-right: 16px;
+
+      //     .submenu-line-icon {
+      //       width: 15px;
+      //       height: 3px;
+      //       background-color: $sub-menu;
+      //       top: 50%;
+      //       margin-top: 12px;
+  
+      //       border-radius: 0px 0px 0px 50px;
+      //     }
+      //   }
+
+      //  }
+      
+
+      .submenu-icon {
+        margin-right: -16px;
+        display: flex;
+        justify-content: end;
+        align-items:center ;
+      }
+    }
+  }
+  .mt--6 {
+    margin-top: -6rem;
+  }
+
+  .sidebar-Logout-btn {
+    bottom: 25px;
+    color: $white-color;
+    z-index: 10;
+    left: 17px;
+    width: 95%;
+  }
+
+  .setIcon {
+    margin: 0px 0px 0px 16px;
+    // background: #083B3F;
+    // padding: 10px;
+    // border-top-left-radius: 6px;
+    // border-bottom-left-radius: 6px;
+    // &:hover{
+    //   background: #083B3F;
+    // }
+  }
+
+  .notification-count {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: $dark-green;
+    right: 0;
+    top: 0;
+    border: 1px solid $white-color;
+  }
+
+  .img-hold {
+    max-width: 50px;
+    padding: 5px 8px 3px 8px;
+    margin-right: 10px;
+  }
+
+  .img-hold img {
+    width: 100%;
+    height: 100%;
+    margin-top: 6px;
+  }
+
+  @media only screen and (min-width: 1025px) and (max-width: 1199.99px) {
+    .MuiDrawer-docked {
+      position: relative;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) {
+    main {
+      overflow-y: unset;
+      height: auto;
+    }
+
+    .messageIcon {
+      bottom: 22px !important;
+      right: 20px !important;
+    }
+
+    .logoHold {
+      width: 340px;
+      padding: 3px 0px 9px 12px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .hideDrawer {
+      top: 0px !important;
+    }
+
+    .iconHold {
+      width: 70px;
+    }
+
+    .searchHold {
+      margin: 30px auto 0;
+      max-width: 90%;
+
+      .searchInput {
+        width: 82%;
+
+        & + .searchIcon {
+          right: 4%;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  bottom: 0px !important;
+}

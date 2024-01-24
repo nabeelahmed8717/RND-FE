@@ -1,0 +1,79 @@
+.collaborator-main-wrapper {
+  background-color: #fff;
+  // margin-top: 30px;
+  padding: 20px 30px 10px 30px;
+  box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4) !important;
+  border-radius: 8px !important;
+  border: 1px solid #DADEE8 !important;
+
+  .head-wrapper {
+    margin-bottom: 30px;
+    row-gap: 15px;
+    flex-wrap: wrap !important;
+
+    .add-collaborator {
+      padding: 12px 36px;
+      border: none;
+    }
+  }
+
+}
+
+.collaborator-modal-form-input {
+  .collaborator-input-error {
+    margin-top: 0.3rem;
+
+    & span {
+      padding-left: 0.4em;
+    }
+  }
+}
+
+
+// .add-collaborator-form-wrapper {
+// .collaborator-modal-form-input {
+//   .wrap-collaborator-modal-input-fields {
+//     max-width: 540px;
+//     margin: 0 auto;
+
+//     .MuiInputBase-formControl {
+//       font-family: $font-source-sans-pro !important;
+//       color: $dark-color !important;
+//       line-height: $lh-24 !important;
+//       font-size: $fs-16 !important;
+//       font-weight: $fw-600 !important;
+//       height: 48px !important;
+//       width: 540px !important;
+//       border-radius: 3px;
+//     }
+
+//     .Mui-focused fieldset {
+//       border-color: $dark-green !important;
+//     }
+
+//     .MuiTextField-root {
+//       border-color: $dark-green !important;
+
+//       &:hover fieldset {
+//         border: 1px solid $primary-color;
+//       }
+//     }
+//   }
+// }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .add-collaborator-form-wrapper {
+//     .collaborator-modal-form-input {
+//       .wrap-collaborator-modal-input-fields {
+//         width: 300px;
+//         margin: 0 auto;
+
+//         .MuiInputBase-formControl {
+//           height: 48px !important;
+//           width: 100% !important;
+//         }
+//       }
+//     }
+//   }
+// }

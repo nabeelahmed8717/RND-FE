@@ -1,0 +1,39 @@
+.search-filters {
+
+  .MuiOutlinedInput-input {
+    // padding: 15px 12px;
+    padding-left: 12px;
+    font-family: $font-source-sans-pro !important;
+    font-weight: $fw-600 !important;
+    font-size: $fs-16 !important;
+  }
+
+  .MuiOutlinedInput-root {
+    height: 54px !important;
+  }
+  .MuiOutlinedInput-root{
+    &fieldset{ 
+    border-color:#CCCCCC;   
+     } 
+    &:hover fieldset{ 
+    border-color:$dark-green; 
+    
+     } 
+     }
+  // .MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  //   height: 54px !important;
+  // }
+
+
+  .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $dark-green;
+  }
+
+  .Mui-focused fieldset {
+    border-color: $dark-green !important;
+  }
+
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    max-height: 171px !important;
+  }
+}

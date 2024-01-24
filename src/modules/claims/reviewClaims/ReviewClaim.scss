@@ -1,0 +1,56 @@
+.review-claims {
+  .approximate-expenditure {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  .padding {
+    padding: 18px 25px;
+  }
+  .sme-status {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .claims-table-child {
+    color: $dark-color;
+    font-size: $fs-16;
+    font-weight: $fw-600;
+  }
+  .claims-table-head {
+    color: $dark-color;
+    font-size: $fs-16;
+    font-weight: $fw-700;
+  }
+  .grants {
+    background: #ff8a43;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .bg-light-green {
+    background: #e1f8ec;
+  }
+  .bg-light-orange {
+    background-color: #fdf0e7;
+  }
+  .bg-light-blue {
+    background: #e4f8fb;
+  }
+  .bg-light-purple {
+    background: #fef1ff;
+  }
+  .sub-contractor {
+    background-color: $blue-color;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .cost {
+    background: #6a346c;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .finalize-claim {
+    padding: 12px 35.5px;
+    border: none;
+    border-radius: 3px;
+  }
+  .sme {
+    border: 1.5px solid #34bc85;
+    border-radius: 1000px;
+    padding: 10px 15px;
+  }
+}

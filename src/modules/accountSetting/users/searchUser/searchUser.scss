@@ -1,0 +1,17 @@
+.search-user{
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    line-height: $lh-24 !important;
+    font-size: $fs-16 !important;
+    font-weight: $fw-600 !important;
+    height: 54px !important;
+  }
+
+      .css-8j6b76-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+        border-color: $dark-green;
+      }
+      .Mui-focused fieldset {
+        border-color: $dark-green !important;
+      }
+}

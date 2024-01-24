@@ -1,0 +1,191 @@
+.sign-up {
+  label,
+  p,
+  h1,
+  h2,
+  span {
+    font-family: $font-source-sans-pro;
+  }
+
+  .MuiInputBase-formControl {
+    font-family: $font-source-sans-pro !important;
+    color: $dark-color !important;
+    font-size: $fs-18;
+    font-weight: $fw-400;
+    height: 56px !important;
+  }
+
+  .MuiFormControlLabel-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .showcase-text {
+    animation: slideInFromRight 1s ease-in;
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(120%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  input {
+    border: none !important;
+    outline: none !important;
+
+    &:hover {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+
+  .Mui-focused fieldset {
+    border-color: #17884d !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sign-up-text {
+    box-sizing: border-box !important;
+
+    h1 {
+      font-size: 75px !important;
+      line-height: 75px !important;
+      margin: 1rem 0 0.5rem !important;
+    }
+
+    .signup-text {
+      font-size: 24px !important;
+      line-height: 30px !important;
+      margin-top: 0;
+    }
+  }
+
+  .sign-up-form {
+    form {
+      h2 {
+        font-size: 42px !important;
+        line-height: 45px !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sign-up {
+    flex-direction: column-reverse !important;
+    align-items: center;
+
+    .sign-up-text {
+      width: 100%;
+      max-width: 750px;
+      box-sizing: border-box !important;
+
+      h1 {
+        font-size: 60px !important;
+        line-height: 60px !important;
+      }
+
+      .signup-text {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .sign-up {
+    .sign-up-text {
+      .log {
+        padding-left: 4rem;
+      }
+
+      h1 {
+        font-size: 40px !important;
+        line-height: 40px !important;
+      }
+
+      .signup-text {
+        font-size: 24px !important;
+        line-height: 30px !important;
+      }
+    }
+
+    .sign-up-form {
+      border-radius: 20px !important;
+
+      form {
+        h2 {
+          font-size: 32px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .sign-up {
+    align-items: center !important;
+
+    .sign-up-text {
+      align-items: center !important;
+
+      .log {
+        padding-left: 0rem;
+      }
+
+      h1 {
+        text-align: center !important;
+      }
+
+      .signup-text {
+        text-align: center !important;
+      }
+    }
+
+    .sign-up-form {
+      border-radius: 20px !important;
+
+      form {
+        h2 {
+          font-size: 32px !important;
+          line-height: 35px !important;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .email-veriff {
+    .heading {
+      font-size: 28px !important;
+      line-height: 36px !important;
+    }
+
+    .veriff-text .email .resend-txt {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+  }
+}

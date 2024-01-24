@@ -1,0 +1,44 @@
+.question-four-wrapper {
+    margin: 25px 0;
+
+    .question-card-wrap {
+        .questions-four-content {
+            .datepicker {
+                fieldset {
+                    border-color: rgba(0, 0, 0, 0.23);
+                }
+                .svgIcon {
+                    background-repeat: no-repeat !important;
+                    background: url("../../../assets/images/questionLayout/black-calendar.png");
+                }
+            }
+
+            .question-four-btn {
+                .btn-back {
+                    border: 1px solid #cccccc;
+                    background-color: #fff;
+
+                    &:hover {
+                        border: 1px solid $primary-color;
+                    }
+                }
+
+                .btn-proceed {
+                    &:hover {
+                        background-color: $primary-color !important;
+                    }
+                }
+
+                .btn-disabled {
+                    background-color: #b6babf;
+                    color: #fff;
+                }
+            }
+
+            .question-alert-wrap {
+                border: 1px solid #dadee8;
+                box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+            }
+        }
+    }
+}
